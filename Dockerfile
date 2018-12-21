@@ -33,10 +33,4 @@ RUN \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN mkdir /src
-COPY . /src
-WORKDIR /src
-
-RUN npm install --production
-
-ENTRYPOINT npm start
+ENTRYPOINT echo hello
